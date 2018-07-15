@@ -1,4 +1,11 @@
 {
+  "scripts": {
+    "start": "node dist/server.js",
+    "build": "npm run build:routes && npm run build:swagger && npm run build:tsc",
+    "build:tsc": "tsc",
+    "build:routes": "tsoa routes",
+    "build:swagger": "tsoa swagger"
+  },
   "dependencies": {
     "express": "^4.16.3",
     "method-override": "^3.0.0",
